@@ -14,18 +14,13 @@
     <!-- Custom CSS -->
     <link href="assets/css/style.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
    
   </head>
 
   <body>
     <div class="main-wrapper">
-      <!-- -------------------------------------------------------------- -->
-      <!-- Preloader - style you can find in spinners.css -->
-      <!-- -------------------------------------------------------------- -->
     
-      <!-- -------------------------------------------------------------- -->
-      <!-- Preloader - style you can find in spinners.css -->
-      <!-- -------------------------------------------------------------- -->
       <!-- -------------------------------------------------------------- -->
       <!-- Login box.scss -->
       <!-- -------------------------------------------------------------- -->
@@ -70,10 +65,10 @@
             <!-- Form -->
                 <div class="row mt-4">
                   <div class="col-12">
-                    <form class="form-horizontal" method="post">
+                    <form class="form-horizontal" method="post" name="validate_password">
                       <span><strong class="text-muted"> insira sua senha para continuar:</strong></span>
                       <div class="form-floating mb-3">
-                        <input type="text" class="form-control form-input-bg" name="senha" id="tb-rfname" placeholder="john deo" required="">
+                        <input type="text" class="form-control form-input-bg" name="password" id="tb-rfname" placeholder="john deo" required="">
                         <label for="tb-rfname">Senha</label>
                         <div class="invalid-feedback">A senha é obrigatória</div>
                       </div>
