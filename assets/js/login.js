@@ -1,5 +1,5 @@
 $(function(){
-    $('body').on('submit', 'form[name=validate_email]', function(e){
+    $('html').on('submit', 'form[name=validate_email]', function(e){
         e.preventDefault();
         $('.j_enter_email').find("button:contains(próximo)").text('')
         .append("<img src='images/loaders/loader2.gif'  style='width:25px;height:25px'><img/>");
@@ -30,7 +30,8 @@ $(function(){
         },'json')
     });
 
-    $('.j_login_with_other_account').click(function(){
+    $('html').on('click','.j_login_with_other_account',function(e){
+        e.preventDefault();
         $('.j_enter_password').slideToggle();
         $('.j_enter_email').slideToggle();
 
