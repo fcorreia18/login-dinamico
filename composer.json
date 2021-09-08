@@ -1,0 +1,18 @@
+{
+    "name": "francisco_correia/login-ajax",
+    "description": "Login dinâmico",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Francisco Correia28",
+            "email": "francisco.correia1804@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CRUD\\": "source/model"
+        }
+    },
+    "require": {}
+}

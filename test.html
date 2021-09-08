@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX[UPLOAD] | jQueryEssentials</title>
+
+
+    <style>
+        * {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body {
+            padding: 10%;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            border: 1px solid #000;
+        }
+
+        .field {
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #09f;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #35acfc;
+        }
+
+        .load {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .success,
+        .error {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px;
+            color: #fff;
+            background: #b76969;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form  method="post" >
+        <input type="hidden" name="action" value="action_creator">
+        <label for="">
+            <span class="field">Fotografia:</span>
+            <input type="file" name="photo">
+        </label>
+        <label for="">
+            <span class="field">Nome:</span>
+            <input type="text" name="first_name" placeholder="Primeiro Nome">
+        </label>
+        <label for="">
+            <span class="field">Nome:</span>
+            <input type="text" name="last_name" placeholder="Ultimo Nome">
+        </label>
+        <label for="">
+            <span class="field">Nome:</span>
+            <input type="email" name="email" placeholder="Seu melhor email">
+        </label>
+        <button>Cadastre-se</button>
+    </form>
+<!-- 
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/login.js "></script> -->
+</body>
+
+</html>
